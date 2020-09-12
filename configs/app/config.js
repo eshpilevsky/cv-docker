@@ -6,7 +6,7 @@ var config =
 	productionPort  : 443,
 
 	/**
-	 * Supported browsers version 
+	 * Supported browsers version
 	 * in bowser satisfy format.
 	 * See more:
 	 * https://www.npmjs.com/package/bowser#filtering-browsers
@@ -28,20 +28,20 @@ var config =
 
 	/**
 	 * Resolutions:
-	 * 
+	 *
 	 * low ~ 320x240
 	 * medium ~ 640x480
 	 * high ~ 1280x720
 	 * veryhigh ~ 1920x1080
 	 * ultra ~ 3840x2560
-	 * 
+	 *
 	 **/
 
 	/**
 	 * Frame rates:
-	 * 
+	 *
 	 * 1, 5, 10, 15, 20, 25, 30
-	 * 
+	 *
 	 **/
 
 	defaultResolution             : 'medium',
@@ -63,7 +63,7 @@ var config =
 	/**
 	 * Alternative simulcast setting:
 	 * [
-	 *   { maxBitRate: 50000 }, 
+	 *   { maxBitRate: 50000 },
 	 *	 { maxBitRate: 1000000 },
 	 *	 { maxBitRate: 4800000 }
 	 *],
@@ -99,17 +99,17 @@ var config =
 	},
 
 	/**
-	 * Set max number participants in one room that join 
+	 * Set max number participants in one room that join
 	 * unmuted. Next participant will join automatically muted
 	 * Default value is 4
-	 * 
-	 * Set it to 0 to auto mute all, 
+	 *
+	 * Set it to 0 to auto mute all,
 	 * Set it to negative (-1) to never automatically auto mute
 	 * but use it with caution
-	 * full mesh audio strongly decrease room capacity! 
+	 * full mesh audio strongly decrease room capacity!
 	 */
 	autoMuteThreshold    : 4,
-	background           : 'images/background.jpg',
+	background           : '',
 	defaultLayout        : 'democratic', // democratic, filmstrip
 	// If true, will show media control buttons in separate
 	// control bar, not in the ME container.
@@ -121,18 +121,18 @@ var config =
 	notificationPosition : 'right',
 	// Timeout for autohiding topbar and button control bar
 	hideTimeout          : 3000,
-	// max number of participant that will be visible in 
+	// max number of participant that will be visible in
 	// as speaker
 	lastN                : 4,
 	mobileLastN          : 1,
-	// Highest number of lastN the user can select manually in 
+	// Highest number of lastN the user can select manually in
 	// userinteface
 	maxLastN             : 10,
 	// If truthy, users can NOT change number of speakers visible
 	lockLastN            : false,
 	// Add file and uncomment for adding logo to appbar
 	// logo       : 'images/logo.svg',
-	title                : 'Consultório Virtual',
+	title                : 'New Edutech',
 	// Service & Support URL
 	// if not set then not displayed on the about modals
 	supportUrl           : 'https://support.example.com',
@@ -140,7 +140,7 @@ var config =
 	// by default privacy/privacy.html
 	// that is a placeholder for your policies
 	//
-	// but an external url could be also used here	 
+	// but an external url could be also used here
 	privacyUrl           : 'privacy/privacy.html',
 	theme                :
 	{

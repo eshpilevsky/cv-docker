@@ -48,7 +48,7 @@ const {
 function getListenIps() {
   const interfaces = os.networkInterfaces();
   const addresses = [];
- 
+
   Object.keys(interfaces).forEach((netInterface) => {
    interfaces[netInterface].forEach((interfaceObject) => {
     if (interfaceObject.family === 'IPv4' && !interfaceObject.internal) {
@@ -81,11 +81,11 @@ module.exports =
 			// issuerURL + '/.well-known/openid-configuration'
 
 			// e.g. google OIDC config
-			// Follow this guide to get credential:  
+			// Follow this guide to get credential:
 			// https://developers.google.com/identity/protocols/oauth2/openid-connect
 			// use this issuerURL
 			// issuerURL     : 'https://accounts.google.com/',
-			
+
 			issuerURL     : 'https://example.com',
 			clientOptions :
 			{
@@ -115,8 +115,8 @@ module.exports =
 			urls: [
 				'turn:numb.viagenie.ca'
 			],
-			username: 'webrtc@live.com',
-			credential: 'muazkh'
+			username: 'shpilevskyevgeny@gmail.com',
+			credential: 'Thomson89'
 		}
 	],
 	fileTracker: 'wss://tracker.lab.vvc.niif.hu:443',
@@ -131,7 +131,7 @@ module.exports =
 		// passphrase: 'key_password'
 		key: `${__dirname}/../certs/privkey.pem`
 	},
-	// listening Host or IP 
+	// listening Host or IP
 	// If omitted listens on every IP. ("0.0.0.0" and "::")
 	// listeningHost: 'localhost',
 	// Listening port for https server.
@@ -303,7 +303,7 @@ module.exports =
 	},
 	// Array of permissions. If no peer with the permission in question
 	// is in the room, all peers are permitted to do the action. The peers
-	// that are allowed because of this rule will not be able to do this 
+	// that are allowed because of this rule will not be able to do this
 	// action as soon as a peer with the permission joins. In this example
 	// everyone will be able to lock/unlock room until a MODERATOR joins.
 	allowWhenRoleMissing: [CHANGE_ROOM_LOCK],
