@@ -18,7 +18,7 @@ services:
     volumes:
       - ./configs/server:${BASEDIR}/${EDUMEET}/server/config
       - ./configs/app:${BASEDIR}/${EDUMEET}/server/public/config
-      - ./certs:/etc/letsencrypt/live/newedutech.xyz
+      - /etc/letsencrypt:/etc/letsencrypt
       - ./images:${BASEDIR}/${EDUMEET}/server/public/images
       - ./privacy:${BASEDIR}/${EDUMEET}/server/public/static/privacy
       - ./.well-known:${BASEDIR}/${EDUMEET}/server/public/.well-known
