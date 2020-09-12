@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
 # newedutech
-  consultoriovirtual:
+  newedutech:
     env_file: .env
     image: newedutech/newedutech:${TAG}
     depends_on:
